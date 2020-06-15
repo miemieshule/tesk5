@@ -1,0 +1,169 @@
+body{
+    margin: 0;  background-color: #fff;
+}
+/*<!--外边距设置0 设置此元素背景色为白色 --> */
+
+.title {
+    line-height: 40px; text-align:center;
+    background-color: #5fc0fd;
+}
+/*<!--文字行高 文字居中显示样式 -->  <!--设置此元素背景色为蓝色 -->*/
+
+.title2{
+    position: relative; padding-top: 10px;  left: 8px; float: left;
+    line-height: 41px;
+}
+/*<!--相对定位使用 内边距顶部8px 左边8px 左浮动两边都有 在margin外部 文字行高41px -->*/
+
+.title3{
+    color: #fff;  font-size: 19px; font-weight: 700;
+}
+/*<!--字体颜色灰色 字体大小19 字体加粗700 居中样式应用于这个字体上 -->*/
+
+.bottom{
+    width: 100%;  height: 55px;
+    text-align: center;
+    position: fixed;  bottom: 0;
+}
+/*<!--宽度百分百 高度55px -->  <!-- 文字居中显示 --> */
+/*<!--此元素设置属性弹性盒子  bottom元素 低于其他正常元素的底边  -->*/
+
+.message{
+    width: 45%;  height: 45px;
+    border-radius:5px;  border:1px solid #5fc0fd;
+    background-color: #fff;   <!-- 元素背景色白色 -->
+    font-size: 17px;  color: #5fc0fd;  font-weight: 700;
+}
+/*<!--宽度百分45% 高度45px -->
+<!--给此div元素添加圆角样式 边距四个边都有 边距线条颜色蓝 -->
+<!--字体大小17 显蓝色 粗体700 -->*/
+
+.phone{
+    width: 45%;  height: 45px;  margin-left: 5px;
+    border-radius:5px;  border:1px solid #5fc0fd;
+    background-color: #5fc0fd;  <!-- 元素背景色蓝色 -->
+    font-size: 17px;  color: #fff;  font-weight: 700;
+}
+/*<!--宽度百分45% 高度45px -->
+<!--给此div元素添加圆角样式 边距四个边都有 边距线条颜色蓝 -->
+<!--字体大小17 显白色 粗体700 -->*/
+
+.backdrop{
+    background-image: url(./task5-1.png);  background-size: 100% 100%;
+    height: 163px;
+}
+/*<!-- 图上加图写法 告知图像位置名称 指定背景图片大小 宽高设置  -->
+<!-- 此元素高度163px -->*/
+
+.print{
+    position: relative; top: 40px;  left: 15px;
+}
+/*<!-- 定位元素 相对定位 顶部40px 左浮动15px-->*/
+
+.p1{
+    position: relative;  left: 28px;  bottom: 15px;
+    font-weight: 700;  color: #fff;
+}
+/*<!--相对定位 根据print元素位置 左浮动28px bottom 底部15px-->
+<!--字体粗体700 字体颜色白色 -->*/
+
+.p2{
+    position: relative;  top:14px;  right: 60px;
+    font-size: 12px;  font-weight: 700;  color: #fff;
+}
+/*<!--相对定位 根据p1元素定位 顶部14 右边60  -->
+<!-- 字体大小12 粗体700 字体白色 -->*/
+
+.line{
+    margin-left: 11px;   padding-left: 10px; border-left: 2px solid #5fc0fd;
+    font-weight: 700;  font-!size: 14px;
+}
+/*<!--外边距左边11px 内边距11px 边框左边11px 边框粗细2px 左边蓝色显示 -->
+<!--三层边 最外层的隔开大盒子 边框区显示线条颜色 内边距隔开内容区  -->
+<!-- 字体大小14 粗体700 字体白色 -->*/
+
+.linebox{
+    line-height: 15px;
+    border-bottom: 1px solid #e1e5e7;
+}
+/*<!--字体行高 15px --> <!--边框区 底部线条 高度1px 白色  -->*/
+
+.line2{
+    display: inline-block;
+    height: 40px; padding-left: 10px;
+    transform:translateY(10px);
+    font-weight: 700; font-size: 14px;
+}
+/*<!-- 此元素转换行内块级元素  -->
+<!-- 此元素高40px 内边距10px宽度  -->
+<!-- 不用标签包裹内容 然后个标签 写顶部top，直接写内容一个 然后用此标签内容平行向下控制 10px  -->
+<!-- 字体大小14 粗体700  -->*/
+
+.linebox3{
+    border-top: 1px solid #e1e5e7;  border-bottom: 1px solid #e1e5e7;
+    margin-left: 17px;  line-height: 40px;
+}
+/*<!--此元素顶部1px 颜色灰白 底部一样 外边距左边宽度17 字体行高40   -->*/
+
+.line3{
+    padding-left: 10px;  padding-right: 10px;
+    border-right: 2px solid #e1e5e7;
+    font-size: 14px;  font-weight: 700;  color: #999999;
+}
+/*<!-- 此元素内边距左边10 右边10px  -->
+<!-- 边框左边2px宽度 颜色白灰  -->
+<!-- 字体大小14 粗体700 颜色灰色 -->*/
+
+.content{
+    padding-left: 10px;
+    font-weight: 700;  font-size: 14px;
+}
+/*<!-- 内边距左边2px宽度 --> <!-- 字体大小14 粗体700  -->*/
+
+.content2{
+    padding-left: 10px;
+    font-weight: 700; font-size: 14px; color: #e26163;
+}
+/*<!-- 内边距左边2px宽度  -->  <!-- 字体大小14 粗体700 红色 -->*/
+
+.linebox4{
+    display:flex;
+    margin-left: 17px;
+    border-bottom: 1px solid #e1e5e7;  border-top: 1px solid #e1e5e7;
+}
+/*<!-- 窗口中的绝对定位设定 目前没搞明白怎么情况 -->
+<!--  左侧17 -->
+<!-- 边框底部 顶部 各自宽1px 都白色 -->*/
+
+
+.line4{
+    padding-left: 10px;  padding-right: 10px;
+    font-size: 14px;  font-weight: 700;  color: #999999;
+    border-right: 2px solid #e1e5e7;
+    width: 59px;
+}
+/*<!-- 此元素内边距左边10 右边10px  --> <!-- 字体大小14 粗体700 颜色灰色 -->
+<!-- 边框左边2px宽度 颜色白灰  --><!-- 这里控制内容区宽度 -->*/
+
+.content3{
+    display: flex;
+    margin: 10px;
+    justify-content: center;  align-items: center;
+    font-size: 14px;
+}
+/*<!-- 此元素属性弹性盒子 flex-->  <!-- 外边距10px宽度 -->*/
+/* justify-content: center;  项目位于容器中心 */
+/*	 align-items: center;  元素位于容器的中心。
+弹性盒子元素在该行的侧轴（纵轴）上居中放置。（如果该行的尺寸小于弹性盒子元素的尺寸，则会向两个方向溢出相同的长度）*/
+
+.xbox{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+/*<!-- 此元素属性弹性盒子 flex-->*/
+/* justify-content: center;  项目位于容器中心
+justify-content 用于设置或检索弹性盒子元素在主轴（横轴）方向上的对齐方式。 */
+/*	 align-items: center;  元素位于容器的中心。
+弹性盒子元素在该行的侧轴（纵轴）上居中放置。（如果该行的尺寸小于弹性盒子元素的尺寸，则会向两个方向溢出相同的长度）*/
+
